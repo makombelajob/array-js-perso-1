@@ -9,3 +9,11 @@ const groupeB = ["apache", "kali", "parrot", "ubuntu", "12"];
 const valeurA = [...groupeA.values()];// Convertir l'itérateur en tableau
 const valeurB = [...groupeB.values()];
 console.log(valeurA.concat(valeurB));
+const full = valeurA.concat(valeurB);
+full.values();
+for ( let one of full) {
+    console.log(one);
+    if ( one === "kali") {
+        alert("Hacking Tool");
+    }
+}

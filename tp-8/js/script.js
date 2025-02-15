@@ -15,7 +15,7 @@ if (isNaN(userChoice) || isNaN(temp) || userChoice < 1 || userChoice > 2 || !Num
     let result;
     switch (userChoice) {
         case 1:
-            result = (temp * 9 / 5) + 32;
+            result = (temp * 9 / 5) + 32;    // limite 2 chiffre après la ","
             alert(`${temp} °C vaut ${result.toFixed(2)} °F`);
             break;
         case 2:
